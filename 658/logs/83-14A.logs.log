@@ -5,7 +5,7 @@ loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=539.8, duration=0.00034499168396
+executed snippet estimated_duration=539.8, duration=0.000188827514648
 script duration name:unknown400_120 seconds:540.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
@@ -13,7 +13,7 @@ loading script "jan_co2.py"
 loading script "jan_pump_extraction_line.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=2.88486480713e-05
+executed snippet estimated_duration=0, duration=2.21729278564e-05
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
 loading script "jan_co2.py"
@@ -23,12 +23,12 @@ no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=0.000102043151855
+executed snippet estimated_duration=0, duration=4.60147857666e-05
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=0.00010085105896
-executed snippet estimated_duration=0.0, duration=0.0178220272064
+executed snippet estimated_duration=0, duration=0.000100135803223
+executed snippet estimated_duration=0.0, duration=0.00213503837585
 script duration name:co2 seconds:0.0
 loading script "jan_unknown400_120.py"
 loading script "jan_pump_ms.py"
@@ -39,19 +39,18 @@ no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000163078308105
-executed snippet estimated_duration=4.0, duration=0.00134491920471
+executed snippet estimated_duration=4.0, duration=0.000209093093872
+executed snippet estimated_duration=4.0, duration=0.00564384460449
 Script duration 540.0
 Run total estimated duration= 541.000
 run duration: 0:09:01
 doing event level: 2
-21:29:04 -- Setting default integration. t=1.048576
+12:07:48 -- Setting default integration. t=1.048576
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 ----------------- start -----------------
 **************** Experiment Type: Ar/Ar, Ar/Ar
-create new session 4475714928
-close session 4475714928
+close session 4950097744
 $$$$$ Clearing conditionals
 adding conditionals 
 Add queue conditionals
@@ -69,48 +68,48 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/jan/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-21:29:04 -- ******* Pre Extraction Check *******
+12:07:48 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.30933,0.10998,0.15589,-0.06763,0.01126,0.00267
-21:29:04 -- testing system defined conditionals
+Pre Extraction Termination data. keys=H2,H1,AX,L1,L2,CDD, signals=-0.18287,0.06014,-0.04583,-0.02245,-0.06249,0.00000
+12:07:48 -- testing system defined conditionals
 Checking default pre extraction terminations n=2
 testing CDD
 evaluate ot="CDD.inactive" t="CDD", ctx="{'CDD': False}"
 GetDeflection CDD ===>> 50
 testing CDD==2000
 evaluate ot="CDD.deflection==2000" t="CDD==2000", ctx="{'CDD': 50.0}"
-21:29:04 -- ******* Pre Extraction Check Passed *******
+12:07:48 -- ******* Pre Extraction Check Passed *******
 =================================================================================
-21:29:04 -- stopping status monitor. block=True
-stop 4938577584
+12:07:48 -- stopping status monitor. block=True
+stop 4947122128
 Status monitor stopped
 Status monitor finished
-21:29:06 -- starting status monitor
-start 4938577584
+12:07:49 -- starting status monitor
+start 4947122128
 StatusMonitor period=1. Frequencies(state=2, checksum=3, lock=5, owner=5)
 start extraction
 do extraction
-Analysis started at 21:29:08.125767
+Analysis started at 12:07:51.289418
 Extraction Started jan_co2.py
-21:29:08 -- ******* Extraction Started jan_co2.py *******
+12:07:51 -- ******* Extraction Started jan_co2.py *******
 state changed from not run to extraction
-DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x12db810b0>
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.RemotePyScriptRunner object at 0x12d8e1890>
 testing...
 no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=6.19888305664e-05
+executed snippet estimated_duration=0, duration=4.79221343994e-05
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=9.20295715332e-05
-executed snippet estimated_duration=100.0, duration=0.00245118141174
+executed snippet estimated_duration=0, duration=8.98838043213e-05
+executed snippet estimated_duration=100.0, duration=0.00182795524597
 Jan CO2 laser analysis
 doing GOSUB
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=9.3936920166e-05
+executed snippet estimated_duration=0, duration=4.10079956055e-05
 Waiting for CO2 access
 wait ('FelixCO2Flag', 0) {}
 waiting for FelixCO2Flag = 0
@@ -127,13 +126,13 @@ Set JanCO2Flag 1 ===>> OK
 JanCO2Flag acquired
 set extraction state False (0.75, 'red', 1.5)
 CO2 acquired
-executed snippet estimated_duration=0, duration=0.0192351341248
+executed snippet estimated_duration=0, duration=0.0170710086823
 WaitForCO2Access.py completed successfully
 gosub finished
 doing GOSUB
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=0.000107049942017
+executed snippet estimated_duration=0, duration=9.60826873779e-05
 Prepare for CO2 analysis
 close () {'description': 'Jan Inlet'}
 close name=--- desc=Jan Inlet
@@ -145,7 +144,7 @@ doing actuation None-script close_channel False
 Close R ===>> OK
 GetIndicatorState R ===>> False
 change switch state (True, True)
-21:29:08 -- CLOSE  VALVE-R (Jan Inlet)
+12:07:51 -- CLOSE  VALVE-R (Jan Inlet)
 -------------------------- close None (Jan Inlet) result=[(True, True)]
 action=close, ok=True, locked=[False]
 open () {'description': 'Jan Ion Pump'}
@@ -158,7 +157,7 @@ doing actuation None-script open_channel False
 Open O ===>> OK
 GetIndicatorState O ===>> OK
 change switch state (True, True)
-21:29:09 -- OPEN   VALVE-O (Jan Ion Pump)
+12:07:52 -- OPEN   VALVE-O (Jan Ion Pump)
 -------------------------- open None (Jan Ion Pump) result=[(True, True)]
 action=open, ok=True, locked=[False]
 close () {'description': 'Microbone to Minibone'}
@@ -171,7 +170,7 @@ doing actuation None-script close_channel False
 Close L ===>> OK
 GetIndicatorState L ===>> False
 change switch state (True, True)
-21:29:09 -- CLOSE  VALVE-L (Microbone to Minibone)
+12:07:52 -- CLOSE  VALVE-L (Microbone to Minibone)
 -------------------------- close None (Microbone to Minibone) result=[(True, True)]
 action=close, ok=True, locked=[False]
 open () {'description': 'Microbone to Turbo'}
@@ -184,7 +183,7 @@ doing actuation None-script open_channel False
 Open U ===>> OK
 GetIndicatorState U ===>> OK
 change switch state (True, True)
-21:29:10 -- OPEN   VALVE-U (Microbone to Turbo)
+12:07:53 -- OPEN   VALVE-U (Microbone to Turbo)
 -------------------------- open None (Microbone to Turbo) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Inlet Pipette'}
@@ -197,7 +196,7 @@ doing actuation None-script open_channel False
 Open S ===>> OK
 GetIndicatorState S ===>> OK
 change switch state (True, True)
-21:29:11 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
+12:07:54 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
 -------------------------- open None (Microbone to Inlet Pipette) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Getter D-50'}
@@ -210,7 +209,7 @@ doing actuation None-script open_channel False
 Open K ===>> OK
 GetIndicatorState K ===>> OK
 change switch state (True, True)
-21:29:11 -- OPEN   VALVE-K (Microbone to Getter D-50)
+12:07:54 -- OPEN   VALVE-K (Microbone to Getter D-50)
 -------------------------- open None (Microbone to Getter D-50) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Getter NP-10'}
@@ -223,7 +222,7 @@ doing actuation None-script open_channel False
 Open M ===>> OK
 GetIndicatorState M ===>> OK
 change switch state (True, True)
-21:29:12 -- OPEN   VALVE-M (Microbone to Getter NP-10)
+12:07:55 -- OPEN   VALVE-M (Microbone to Getter NP-10)
 -------------------------- open None (Microbone to Getter NP-10) result=[(True, True)]
 action=open, ok=True, locked=[False]
 close () {'description': 'CO2 Laser to Felix'}
@@ -246,7 +245,7 @@ doing actuation None-script open_channel False
 Open A ===>> OK
 GetIndicatorState A ===>> OK
 change switch state (True, True)
-21:29:13 -- OPEN   VALVE-A (CO2 Laser to Jan)
+12:07:55 -- OPEN   VALVE-A (CO2 Laser to Jan)
 -------------------------- open None (CO2 Laser to Jan) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to CO2 Laser'}
@@ -259,10 +258,10 @@ doing actuation None-script open_channel False
 Open T ===>> OK
 GetIndicatorState T ===>> OK
 change switch state (True, True)
-21:29:13 -- OPEN   VALVE-T (Microbone to CO2 Laser)
+12:07:56 -- OPEN   VALVE-T (Microbone to CO2 Laser)
 -------------------------- open None (Microbone to CO2 Laser) result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=6.00346803665
+executed snippet estimated_duration=0, duration=5.10669088364
 PrepareForCO2Analysis.py completed successfully
 gosub finished
 set_motor ('beam', '2.0') {}
@@ -276,16 +275,6 @@ move_to_position ('12',) {'autocenter': True}
 FusionsCO2 move to position 12
 sending GoToHole 12,True
 GoToHole 12,True ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
-GetDriveMoving ===>> OK
 GetDriveMoving ===>> False
 GetDriveMoving ===>> False
 Block completed
@@ -303,7 +292,7 @@ SLEEP 5.0
 block started
 WaitControl setup for 5.0  
 Join finished
-block finished. duration 5.30139398575
+block finished. duration 5.03203988075
 close () {'description': 'Microbone to Turbo'}
 close name=--- desc=Microbone to Turbo
 checking ownership. requestor=192.168.2.150
@@ -314,7 +303,7 @@ doing actuation None-script close_channel True
 Close U ===>> OK
 GetIndicatorState U ===>> False
 change switch state (True, True)
-21:29:26 -- CLOSE  VALVE-U (Microbone to Turbo)
+12:08:05 -- CLOSE  VALVE-U (Microbone to Turbo)
 -------------------------- close None (Microbone to Turbo) result=[(True, True)]
 action=close, ok=True, locked=[False]
 enable laser
@@ -325,14 +314,14 @@ Enable ===>> OK
 begin interval
 BEGIN INTERVAL Interval 1 waiting for 30.0
 block started
-set extract to 0.5
 WaitControl setup for 30.0  
-extract (0.5,) {}
+set extract to 0.65
+extract (0.65,) {}
 GetPosition ===>> 0.00000,4.80060,1.00000
-set extraction state FusionsCO2 ON! 0.5(watts) (0.75, 'red', 1.5)
-extract sample to 0.5 (watts)
+set extraction state FusionsCO2 ON! 0.65(watts) (0.75, 'red', 1.5)
+extract sample to 0.65 (watts)
 set laser output
-{"units":"watts","command":"SetLaserOutput","value":0.5} ===>> OK
+{"units":"watts","command":"SetLaserOutput","value":0.65} ===>> OK
 executing pattern triangle.lp
 execute_pattern ('triangle.lp',) {}
 executing pattern triangle.lp
@@ -362,13 +351,14 @@ IsPatterning ===>> OK
 IsPatterning ===>> OK
 IsPatterning ===>> OK
 IsPatterning ===>> OK
+IsPatterning ===>> OK
 IsPatterning ===>> False
+Join finished
+block finished. duration 30.0951189995
+Interval 1 finished
 IsPatterning ===>> False
 Block completed
 COMPLETE INTERVAL waiting for Interval 1 to complete
-Join finished
-block finished. duration 30.3513090611
-Interval 1 finished
 end_extract () {}
 ending extraction. set laser power to 0
 set laser power 0
@@ -383,8 +373,8 @@ SLEEP 30.0
 block started
 WaitControl setup for 30.0  
 Join finished
-block finished. duration 30.205878973
-executed snippet estimated_duration=166.0, duration=80.4592690468
+block finished. duration 30.0862560272
+executed snippet estimated_duration=165.0, duration=75.4730510712
 jan_co2.py completed successfully
 GetAchievedOutput ===>> No Response
 Requested Output= 0.000
@@ -397,40 +387,47 @@ AutomatedRunPersister post_extraction_save deprecated
 persistence save - dvc
 no extraction position for 12
 not connected to db mysql://janexp@129.138.12.160/labspy
+using pymysql
+5039426160 connecting to database mysql://janexp@129.138.12.160/labspy
+create new session 5039426160
+testing database connection get_migrate_version
+closing test session
+close session 5039426160
+connected to db mysql://janexp@129.138.12.160/labspy
 Enviromentals: {'lab_humiditys': [{'device': 'EnvironmentalMonitor',
                     'name': 'Lab Hum.',
-                    'pub_date': '2017-10-27T20:43:46',
+                    'pub_date': '2017-10-28T12:06:27',
                     'title': 'iServer Hum.',
                     'value': 24.1}],
  'lab_pneumatics': [{'device': 'AirPressure',
                      'name': 'Pressure',
-                     'pub_date': '2017-10-27T21:29:04',
+                     'pub_date': '2017-10-28T12:08:27',
                      'title': None,
-                     'value': 99.975},
+                     'value': 110.475},
                     {'device': 'AirPressure2',
                      'name': 'Pressure2',
-                     'pub_date': '2017-10-27T21:29:16',
+                     'pub_date': '2017-10-28T12:08:27',
                      'title': None,
-                     'value': 101.20708}],
+                     'value': 113.3704}],
  'lab_temperatures': [{'device': 'Coldfinger',
                        'name': 'ColdFinger Temp.',
-                       'pub_date': '2017-10-27T19:34:05',
+                       'pub_date': '2017-10-28T12:06:27',
                        'title': None,
-                       'value': 70.0},
+                       'value': 69.0},
                       {'device': 'EnvironmentalMonitor',
                        'name': 'Lab Temp.',
-                       'pub_date': '2017-10-27T21:20:09',
+                       'pub_date': '2017-10-28T12:06:27',
                        'title': 'iServer Temp.',
-                       'value': 70.1},
+                       'value': 70.5},
                       {'device': 'Chiller',
                        'name': 'Coolant Temp.',
-                       'pub_date': '2017-10-27T21:21:08',
+                       'pub_date': '2017-10-28T12:06:27',
                        'title': None,
                        'value': 18.0}]}
 Extraction Finished
-21:30:31 -- ******* Extraction Finished *******
+12:09:09 -- ******* Extraction Finished *******
 no overlap. not waiting for min ms pumptime
-21:30:31 -- Sending spectrometer configuration
+12:09:09 -- Sending spectrometer configuration
 ======== Sending configuration ========
 SetDeflection CDD,50.0 ===>> OK
 SetDeflection H2,0.0 ===>> OK
@@ -446,7 +443,7 @@ SetElectronEnergy 75.08 ===>> OK
 SetYSymmetry -2.81 ===>> OK
 SetIonCounterVoltage 1590.0 ===>> OK
 send trap current 200.0
-GetParameter Trap Current Readback ===>> 198.370811206739
+GetParameter Trap Current Readback ===>> 198.258926936459
 SetParameter Trap Current Set,200.0 ===>> OK
 updating mftable name mftable
 Using mftable located at /Users/jan/Pychron/setupfiles/spectrometer/mftables/mftable.csv
@@ -465,13 +462,13 @@ get initial guess parabolic
 ======== Configuration Finished ========
 GetYSymmetry ===>> -2.81
 GetZSymmetry ===>> -50.72
-GetParameter Trap Current Readback ===>> 198.147042666178
+GetParameter Trap Current Readback ===>> 197.363852774217
 GetHighVoltage ===>> 4500
 start measurement
 do measurement
 L#=65883 analysis type=unknown
 Measurement Started jan_unknown400_120.py
-21:30:32 -- ******* Measurement Started jan_unknown400_120.py *******
+12:09:09 -- ******* Measurement Started jan_unknown400_120.py *******
 state changed from extraction to measurement
 setting trap, emission, spec, defl, and gains
 GetExtractionLens ===>> 26.13
@@ -493,11 +490,11 @@ GetGain CDD ===>> 0
 GetParameter Trap Current Readback ===>> 198.258926936459
 GetParameter Source Current Readback ===>> 552.049929805286
 pre measurement save
-New frame /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+New frame /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
 testing...
 no interpolation path defined
-executed snippet estimated_duration=552.28, duration=0.00014591217041
+executed snippet estimated_duration=552.28, duration=0.000235080718994
 unknown measurement script
 activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2', 'CDD') {}
 activate detectors
@@ -506,12 +503,12 @@ create graphs
 clearing graphs
 creating plots for detectors [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2), Detector(CDD)]
 clear isotope group
-setting isotope det=H2, iso=Ar41
-setting isotope det=H1, iso=Ar40
-setting isotope det=AX, iso=Ar39
-setting isotope det=L1, iso=Ar38
-setting isotope det=L2, iso=Ar37
-setting isotope det=CDD, iso=Ar36
+setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2, iso=Ar36
+setting isotope det=CDD, iso=Ar35
 setting previous blanks
  - setting Ar41 blank 0.013+/-0.011
  - setting Ar40 blank 0.403+/-0.007
@@ -537,10 +534,10 @@ GetDeflection H1 ===>> 0
 GetHighVoltage ===>> 4500
 positioning Ar40 (5.87909) on H1
 setting magnet DAC
-current  : 5.879091
+current  : 5.894090
 requested: 5.879090
-Delta Dac: 0.000001
-Checking detector protection. dv=0.00000
+Delta Dac: 0.015000
+Checking detector protection. dv=0.01500
 Checking detector "CDD". Protection Threshold: 0.5 (V)
 AF Demag not enabled. self.use_af_demag=False, use_af_demag=False
 SetMagnetDAC 5.87909 ===>> OK
@@ -549,7 +546,7 @@ Magnet settling complete
 set_dac. change=True
 equilibrate () {'delay': 3, 'inlet': 'R', 'outlet': 'O', 'eqtime': 12.0}
 Equilibration Started
-21:30:33 -- ******* Equilibration Started *******
+12:09:10 -- ******* Equilibration Started *******
 checking ownership. requestor=192.168.2.150
 check software interlocks O
 interlocks []
@@ -558,17 +555,17 @@ doing actuation None-script close_channel True
 Close O ===>> OK
 GetIndicatorState O ===>> False
 change switch state (True, True)
-21:30:33 -- CLOSE  VALVE-O (Jan Ion Pump)
+12:09:11 -- CLOSE  VALVE-O (Jan Ion Pump)
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x133eb4770>
 waiting 3s before opening inlet value ('R',)
-update labels <pychron.experiment.plot_panel.PlotPanel object at 0x18d5639b0>
-update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x1861a90b0>"
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x12c8a21d0>"
 setting label 0 H2 Ar41
 setting label 1 H1 Ar40
 setting label 2 AX Ar39
 setting label 3 L1 Ar38
 setting label 4 L2 Ar37
 setting label 5 CDD Ar36
-update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x16ab10230>"
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x12c8879b0>"
 setting label 0 H2 Ar41
 setting label 1 H1 Ar40
 setting label 2 AX Ar39
@@ -583,7 +580,7 @@ doing actuation None-script open_channel True
 Open R ===>> OK
 GetIndicatorState R ===>> OK
 change switch state (True, True)
-21:30:36 -- OPEN   VALVE-R (Jan Inlet)
+12:09:14 -- OPEN   VALVE-R (Jan Inlet)
 set_time_zero () {}
 equilibrating for 12.0sec
 sniff (12.0,) {}
@@ -595,38 +592,36 @@ add group /sniff/Ar39 (Group) '' table AX
 add group /sniff/Ar38 (Group) '' table L1
 add group /sniff/Ar37 (Group) '' table L2
 add group /sniff/Ar36 (Group) '' table CDD
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
 measuring sniff. ncounts=12.0
 "sniff" increment series count="1" fit count="0" regressing="False"
 starting measurement
 measurement period (ms) = 1048.576
 Equilibration Finished
-21:30:49 -- ******* Equilibration Finished *******
+12:09:26 -- ******* Equilibration Finished *******
 checking ownership. requestor=192.168.2.150
 check software interlocks R
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 Close R ===>> OK
-set states for children of R. state=False
-refresh_canvas_needed fired
 GetIndicatorState R ===>> False
 change switch state (True, True)
-21:30:49 -- CLOSE  VALVE-R (Jan Inlet)
+12:09:27 -- CLOSE  VALVE-R (Jan Inlet)
 Post Equilibration Started jan_pump_extraction_line.py
-21:30:49 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
+12:09:27 -- ******* Post Equilibration Started jan_pump_extraction_line.py *******
 testing...
 no interpolation path defined
 calculate duration
 testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000152111053467
-executed snippet estimated_duration=4.0, duration=0.00131583213806
+executed snippet estimated_duration=4.0, duration=0.000188112258911
+executed snippet estimated_duration=4.0, duration=0.0150499343872
 Pump after analysis
 doing GOSUB
 testing...
 no interpolation path defined
-executed snippet estimated_duration=4.0, duration=0.000163078308105
+executed snippet estimated_duration=4.0, duration=0.000149011611938
 Pump Microbone
 close () {'description': 'Jan Inlet'}
 close name=--- desc=Jan Inlet
@@ -635,24 +630,20 @@ check software interlocks R
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
-Close R ===>> OK
 waiting for write to finish
 measurement finished
-estimated time: 12.583 actual time: :12.736
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+estimated time: 12.583 actual time: :12.697
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
 set_fits () {}
-GetIndicatorState R ===>> False
 using default fits file=/Users/jan/Pychron/scripts/measurement/fits/nominal.yaml
-change switch state (True, True)
 set "Ar41" to "('linear', 'SEM')"
 set "Ar40" to "('Parabolic', 'SEM')"
+Close R ===>> OK
 set "Ar36" to "('Parabolic', 'SEM')"
 set "Ar37" to "('linear', 'SEM')"
 set "Ar38" to "('linear', 'SEM')"
 set "Ar39" to "('Parabolic', 'SEM')"
 set_baseline_fits () {}
-21:30:50 -- CLOSE  VALVE-R (Jan Inlet)
--------------------------- close None (Jan Inlet) result=[(True, True)]
 using default fits file=/Users/jan/Pychron/scripts/measurement/fits/nominal.yaml
 set "H2" to "('average', 'SEM')"
 set "H1" to "('average', 'SEM')"
@@ -663,13 +654,18 @@ set "AX" to "('average', 'SEM')"
 multicollect () {'integration_time': 1, 'ncounts': 400}
 build tables- signal [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2), Detector(CDD)]
 add group /signal/Ar41 (Group) '' table H2
+GetIndicatorState R ===>> False
 add group /signal/Ar40 (Group) '' table H1
+change switch state (True, True)
 add group /signal/Ar39 (Group) '' table AX
 add group /signal/Ar38 (Group) '' table L1
 add group /signal/Ar37 (Group) '' table L2
 add group /signal/Ar36 (Group) '' table CDD
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
+12:09:28 -- CLOSE  VALVE-R (Jan Inlet)
 measuring signal. ncounts=400
+-------------------------- close None (Jan Inlet) result=[(True, True)]
+"signal" increment series count="2" fit count="1" regressing="True"
 action=close, ok=True, locked=[False]
 is_closed ('F',) {}
 is F () closed?
@@ -684,9 +680,8 @@ doing actuation None-script open_channel False
 Open A ===>> OK
 GetIndicatorState A ===>> OK
 change switch state (True, True)
-21:30:50 -- OPEN   VALVE-A (CO2 Laser to Jan)
+12:09:28 -- OPEN   VALVE-A (CO2 Laser to Jan)
 -------------------------- open None (CO2 Laser to Jan) result=[(True, True)]
-"signal" increment series count="2" fit count="1" regressing="True"
 starting measurement
 measurement period (ms) = 1048.576
 action=open, ok=True, locked=[False]
@@ -712,7 +707,7 @@ doing actuation None-script open_channel True
 Open U ===>> OK
 GetIndicatorState U ===>> OK
 change switch state (True, True)
-21:30:53 -- OPEN   VALVE-U (Microbone to Turbo)
+12:09:29 -- OPEN   VALVE-U (Microbone to Turbo)
 -------------------------- open None (Microbone to Turbo) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Getter NP-10'}
@@ -725,7 +720,7 @@ doing actuation None-script open_channel False
 Open M ===>> OK
 GetIndicatorState M ===>> OK
 change switch state (True, True)
-21:30:53 -- OPEN   VALVE-M (Microbone to Getter NP-10)
+12:09:30 -- OPEN   VALVE-M (Microbone to Getter NP-10)
 -------------------------- open None (Microbone to Getter NP-10) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Getter D-50'}
@@ -738,7 +733,7 @@ doing actuation None-script open_channel False
 Open K ===>> OK
 GetIndicatorState K ===>> OK
 change switch state (True, True)
-21:30:54 -- OPEN   VALVE-K (Microbone to Getter D-50)
+12:09:31 -- OPEN   VALVE-K (Microbone to Getter D-50)
 -------------------------- open None (Microbone to Getter D-50) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to CO2 Laser'}
@@ -748,12 +743,10 @@ check software interlocks T
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
-testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
 Open T ===>> OK
 GetIndicatorState T ===>> OK
 change switch state (True, True)
-21:30:55 -- OPEN   VALVE-T (Microbone to CO2 Laser)
+12:09:31 -- OPEN   VALVE-T (Microbone to CO2 Laser)
 -------------------------- open None (Microbone to CO2 Laser) result=[(True, True)]
 action=open, ok=True, locked=[False]
 open () {'description': 'Microbone to Inlet Pipette'}
@@ -766,514 +759,340 @@ doing actuation None-script open_channel False
 Open S ===>> OK
 GetIndicatorState S ===>> OK
 change switch state (True, True)
-21:30:56 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
+12:09:32 -- OPEN   VALVE-S (Microbone to Inlet Pipette)
 -------------------------- open None (Microbone to Inlet Pipette) result=[(True, True)]
 action=open, ok=True, locked=[False]
 sleep (1,) {}
 SLEEP 1.0
+testing H1<-5.0
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 set_resource () {'name': 'CO2PumpTimeFlag', 'value': 30}
 Set CO2PumpTimeFlag 30 ===>> OK
 release ('JanCO2Flag',) {}
 release JanCO2Flag
-Set JanCO2Flag 0 ===>> 
-executed snippet estimated_duration=6.0, duration=8.12812399864
+Set JanCO2Flag 0 ===>> OK
+executed snippet estimated_duration=6.0, duration=6.11706209183
 PumpMicrobone.py completed successfully
 gosub finished
 get_resource_value () {'name': 'JanMiniboneFlag'}
-Read JanMiniboneFlag ===>> 
-_execute: Traceback (most recent call last):
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/pyscript.py", line 361, in execute_snippet
-    func(*argv)
-  File "<string>", line 10, in main
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/pyscript.py", line 88, in decorator
-    return func(obj, *args, **kw)
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/extraction_line_pyscript.py", line 768, in get_resource_value
-    resp = r.get()
-  File "/Users/jan/.pychron.0/updates/pychron/extraction_line/pyscript_runner.py", line 123, in get
-    resp = self.read()
-  File "/Users/jan/.pychron.0/updates/pychron/extraction_line/pyscript_runner.py", line 120, in read
-    return float(resp)
-ValueError: could not convert string to float: 
-
-Post Equilibration Finished unsuccessfully
-21:30:58 -- ******* Post Equilibration Finished unsuccessfully *******
-The checksum is not correct for this message. Expected: ffff, Actual: 
+Read JanMiniboneFlag ===>> 0
+Get Resource Value JanMiniboneFlag=0.0
+get resource value 0.0
+get_resource_value () {'name': 'JanMiniboneFlag'}
+Read JanMiniboneFlag ===>> 0
+Get Resource Value JanMiniboneFlag=0.0
+executed snippet estimated_duration=4.0, duration=6.13350296021
+jan_pump_extraction_line.py completed successfully
+Post Equilibration Finished
+12:09:33 -- ******* Post Equilibration Finished *******
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
-The checksum is not correct for this message. Expected: ffff, Actual: 
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
-The checksum is not correct for this message. Expected: ffff, Actual: 
-The checksum is not correct for this message. Expected: ffff, Actual: 
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
-The checksum is not correct for this message. Expected: ffff, Actual: 
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-21:31:16 -- collecting point 25
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
+12:09:53 -- collecting point 25
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-21:31:42 -- collecting point 50
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
+12:10:20 -- collecting point 50
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
-21:32:09 -- collecting point 75
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
+12:10:46 -- collecting point 75
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.042739524807375716}"
-ask. get packet. error: [Errno 54] Connection reset by peer address: TCP://192.168.2.153:1061
-doing retry 0
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02935933235929179}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0421785762612165}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02895107851062221}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04201784813381661}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.028705327495670438}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04181140057621229}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02857506904489824}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04221458542091225}"
-21:32:35 -- collecting point 100
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02834231209990636}"
+12:11:12 -- collecting point 100
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0418077492091177}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.027996107069648998}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04147540594656982}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02762340763959704}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04136613982509915}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.027355766595186265}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.041565222159706885}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.027035407859773923}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.041221393429441554}"
-21:33:01 -- collecting point 125
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.026563265955859873}"
+12:11:38 -- collecting point 125
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.041233934923199704}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02634777197371409}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04155919183247092}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.026154057341325282}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04150654506702955}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02609497520260879}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.041525339032204026}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02584907636242304}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04124706165932285}"
-21:33:28 -- collecting point 150
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025863227825832336}"
+12:12:05 -- collecting point 150
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.041198707254850836}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02578607442679999}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.041224084085193555}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025647275374143283}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0409836065333839}"
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025621392670656745}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04103202948189879}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025621398252411935}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04083540002033745}"
-21:33:54 -- collecting point 175
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0254981556035934}"
+12:12:31 -- collecting point 175
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040733678010433275}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02552059158123604}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040721312341587164}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025349385747576912}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04072638566029917}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025330499726624926}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04075642184913085}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025398449910144873}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04073734520912528}"
-21:34:20 -- collecting point 200
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.025083347375880097}"
+12:12:57 -- collecting point 200
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040525690681561796}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024978063971969965}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04041766293399962}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024973179079306778}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040391020834332464}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02493044081000317}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040387042220208336}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02478145173899679}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04038270016610883}"
-21:34:47 -- collecting point 225
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024727034269384565}"
+12:13:24 -- collecting point 225
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0402978996154959}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024734926611656907}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0401599862802772}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024655511065719858}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04003775861955788}"
-no intensity change cnt= 0
-signals=[ -0.20829812  15.71320243   0.93182101  -0.05484955   0.05377708
-   0.04717389]
-prev_signals=[ -0.20829812  15.71320243   0.93182101  -0.05484955   0.05377708
-   0.04717389]
-resetting no_intensity_change_cnt
-signals=[ -0.05285783  15.70130981   0.86513496  -0.02396483  -0.13197689
-   0.03515787]
-prev_signals=[ -0.20829812  15.71320243   0.93182101  -0.05484955   0.05377708
-   0.04717389]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024464662434020987}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04026974331125582}"
-no intensity change cnt= 0
-signals=[ -0.03689041  15.79149498   0.88140269  -0.05495562   0.03680115
-   0.03664133]
-prev_signals=[ -0.03689041  15.79149498   0.88140269  -0.05495562   0.03680115
-   0.03664133]
-resetting no_intensity_change_cnt
-signals=[  0.04306473  15.78353064   0.93038442  -0.07734476   0.13429784
-   0.04346524]
-prev_signals=[ -0.03689041  15.79149498   0.88140269  -0.05495562   0.03680115
-   0.03664133]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024515847685302287}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04025538335375792}"
-21:35:13 -- collecting point 250
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02445254192588787}"
+12:13:50 -- collecting point 250
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04022003218624045}"
-no intensity change cnt= 0
-signals=[ -1.20032119e-01   1.57544317e+01   9.28739331e-01  -7.30610019e-03
-  -7.44049215e-02   3.90148601e-02]
-prev_signals=[ -1.20032119e-01   1.57544317e+01   9.28739331e-01  -7.30610019e-03
-  -7.44049215e-02   3.90148601e-02]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024503236820420767}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040289150947417265}"
-resetting no_intensity_change_cnt
-signals=[ -4.00653319e-01   1.58112861e+01   9.36374190e-01  -6.80543779e-02
-  -1.14450105e-02   3.70863643e-02]
-prev_signals=[ -1.20032119e-01   1.57544317e+01   9.28739331e-01  -7.30610019e-03
-  -7.44049215e-02   3.90148601e-02]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024352723504597894}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04026403937474401}"
-no intensity change cnt= 0
-signals=[  0.10431877  15.86624074   0.83072118  -0.0522601    0.06261973
-   0.04124005]
-prev_signals=[  0.10431877  15.86624074   0.83072118  -0.0522601    0.06261973
-   0.04124005]
-resetting no_intensity_change_cnt
-signals=[ -1.68841716e-01   1.58546762e+01   9.17942648e-01  -5.26352353e-02
-  -8.47792345e-03   4.28718531e-02]
-prev_signals=[  0.10431877  15.86624074   0.83072118  -0.0522601    0.06261973
-   0.04124005]
-no intensity change cnt= 0
-signals=[ -0.39119039  15.74946692   0.96820608  -0.04113645   0.07541632
-   0.04034997]
-prev_signals=[ -0.39119039  15.74946692   0.96820608  -0.04113645   0.07541632
-   0.04034997]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024366754577466884}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04044021157463095}"
-resetting no_intensity_change_cnt
-signals=[ -0.29541576  15.84904232   0.958842    -0.06918384  -0.01767232
-   0.0430202 ]
-prev_signals=[ -0.39119039  15.74946692   0.96820608  -0.04113645   0.07541632
-   0.04034997]
-no intensity change cnt= 0
-signals=[ -0.29541576  15.84904232   0.958842    -0.06918384  -0.01767232
-   0.0430202 ]
-prev_signals=[ -0.29541576  15.84904232   0.958842    -0.06918384  -0.01767232
-   0.0430202 ]
-resetting no_intensity_change_cnt
-signals=[  0.07306389  15.90831575   0.9128575   -0.06178465   0.03980243
-   0.03886651]
-prev_signals=[ -0.29541576  15.84904232   0.958842    -0.06918384  -0.01767232
-   0.0430202 ]
-no intensity change cnt= 0
-signals=[  0.07306389  15.90831575   0.9128575   -0.06178465   0.03980243
-   0.03886651]
-prev_signals=[  0.07306389  15.90831575   0.9128575   -0.06178465   0.03980243
-   0.03886651]
-resetting no_intensity_change_cnt
-signals=[ -0.13964749  15.94094481   0.82679788  -0.05250185   0.10722241
-   0.04257516]
-prev_signals=[  0.07306389  15.90831575   0.9128575   -0.06178465   0.03980243
-   0.03886651]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024426707139868435}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04058821986868446}"
-21:35:39 -- collecting point 275
-no intensity change cnt= 0
-signals=[ -0.09619662  15.84558238   1.01188787  -0.02305322   0.05106898
-   0.03649298]
-prev_signals=[ -0.09619662  15.84558238   1.01188787  -0.02305322   0.05106898
-   0.03649298]
-resetting no_intensity_change_cnt
-signals=[ -1.46261885e-01   1.58277957e+01   9.10506145e-01  -7.55686816e-02
-  -1.80434202e-03   4.00532811e-02]
-prev_signals=[ -0.09619662  15.84558238   1.01188787  -0.02305322   0.05106898
-   0.03649298]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024357060331895428}"
+12:14:16 -- collecting point 275
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040538453247441805}"
-no intensity change cnt= 0
-signals=[ -0.18948241  16.03069475   0.80239366  -0.05821822   0.03182098
-   0.03545456]
-prev_signals=[ -0.18948241  16.03069475   0.80239366  -0.05821822   0.03182098
-   0.03545456]
-resetting no_intensity_change_cnt
-signals=[ -0.18549115  15.95255722   0.98567677  -0.05448724   0.08885049
-   0.03916321]
-prev_signals=[ -0.18948241  16.03069475   0.80239366  -0.05821822   0.03182098
-   0.03545456]
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
-no intensity change cnt= 0
-signals=[ -0.03095959  15.85871529   0.93927073  -0.03197835  -0.09223657
-   0.04005328]
-prev_signals=[ -0.03095959  15.85871529   0.93927073  -0.03197835  -0.09223657
-   0.04005328]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02430018043517766}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0404418829980569}"
-resetting no_intensity_change_cnt
-signals=[ -0.32300896  15.94547633   0.88755156  -0.0660534    0.10165609
-   0.03664133]
-prev_signals=[ -0.03095959  15.85871529   0.93927073  -0.03197835  -0.09223657
-   0.04005328]
-no intensity change cnt= 0
-signals=[ -0.124936    15.99442115   0.9858968   -0.06014573   0.06816722
-   0.04049832]
-prev_signals=[ -0.124936    15.99442115   0.9858968   -0.06014573   0.06816722
-   0.04049832]
-resetting no_intensity_change_cnt
-signals=[ -0.25641905  15.94980205   0.92563458  -0.03414433   0.03779069
-   0.03990494]
-prev_signals=[ -0.124936    15.99442115   0.9858968   -0.06014573   0.06816722
-   0.04049832]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024233187145131587}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040412290386812044}"
-no intensity change cnt= 0
-signals=[ -0.12630452  15.9189722    0.85157866  -0.04502369   0.0428038
-   0.03708636]
-prev_signals=[ -0.12630452  15.9189722    0.85157866  -0.04502369   0.0428038
-   0.03708636]
-resetting no_intensity_change_cnt
-signals=[ -0.3865159   15.94448505   0.95727754  -0.07481982   0.06792791
-   0.03886651]
-prev_signals=[ -0.12630452  15.9189722    0.85157866  -0.04502369   0.0428038
-   0.03708636]
-no intensity change cnt= 0
-signals=[ -2.59725854e-01   1.60152486e+01   9.39850045e-01  -4.56171879e-02
-  -6.79327063e-03   3.66413269e-02]
-prev_signals=[ -2.59725854e-01   1.60152486e+01   9.39850045e-01  -4.56171879e-02
-  -6.79327063e-03   3.66413269e-02]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024169163129647037}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040363284656207754}"
-resetting no_intensity_change_cnt
-signals=[ -1.98263122e-01   1.60224951e+01   9.16900113e-01  -5.45444445e-02
-   4.71754477e-03   4.02016269e-02]
-prev_signals=[ -2.59725854e-01   1.60152486e+01   9.39850045e-01  -4.56171879e-02
-  -6.79327063e-03   3.66413269e-02]
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024119639553695824}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04037521924415851}"
-21:36:06 -- collecting point 300
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024172126803220804}"
+12:14:42 -- collecting point 300
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04036545788748052}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024108956971115394}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04030651538913786}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024075336298280473}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040241680799908336}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0240870867213671}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040128871134447325}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024067487924167966}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040165997358201824}"
-21:36:32 -- collecting point 325
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02409402805299512}"
+12:15:09 -- collecting point 325
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04022093062746683}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.024017317219233645}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0402982253776888}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023991698421423242}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040200474552171954}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02402843385849409}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.04017578191889222}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023953712832673377}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040131835643105386}"
-21:36:58 -- collecting point 350
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023867421946088048}"
+12:15:35 -- collecting point 350
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0401312431393704}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023822960625129404}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040117683442060216}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023865107208482915}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.040007432811392366}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023861818601582797}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03993577470489229}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023873499022065786}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039921377200458054}"
-21:37:25 -- collecting point 375
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023837764546590368}"
+12:16:01 -- collecting point 375
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039878667406737775}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023852354621649065}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03983483673265373}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02393532563611324}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039779441476257664}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023926644615168764}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03970294229408168}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023925172571542926}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.06177604711951249}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.054964735}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039740687209831045}"
-21:37:51 -- collecting point 400
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02393264691558047}"
+12:16:27 -- collecting point 400
 waiting for write to finish
 measurement finished
-estimated time: 419.430 actual time: :421.338
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+estimated time: 419.430 actual time: :420.345
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
 baselines () {'settling_time': 15.0, 'detector': 'H1', 'mass': 34.2, 'ncounts': 120}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
 build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2), Detector(CDD)]
@@ -1283,7 +1102,7 @@ add group baseline table AX
 add group baseline table L1
 add group baseline table L2
 add group baseline table CDD
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
 detector Detector(H1)
 POSITION 34.2 H1
 Mapping mass to dac mass func: "parabolic"
@@ -1328,101 +1147,93 @@ measuring baseline. ncounts=120
 starting measurement
 measurement period (ms) = 1048.576
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04450071473803836}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
-ask. get packet. error: [Errno 54] Connection reset by peer address: TCP://192.168.2.153:1061
-doing retry 0
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.004004242873667609}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.029874306100921337}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.0359356121844396}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.047585916342699375}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.033617344861829754}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04726468512379292}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.03581393769960552}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04845328980746897}"
-21:38:36 -- collecting point 25
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.03758719421893181}"
+12:17:12 -- collecting point 25
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.056027964353726686}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.0438013133816361}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05039732531995933}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04227424107908131}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05109917093815403}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.043413754004265816}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.0554087552566676}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04590795418474}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05619487895503003}"
-21:39:03 -- collecting point 50
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04474831969636734}"
+12:17:38 -- collecting point 50
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.053296383997094486}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04503880430686414}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05454306913991489}"
-The checksum is not correct for this message. Expected: ffff, Actual: 
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.047616596319711275}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05240700005985513}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04812562169229523}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05089578103317597}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04818364431964013}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.04815738233553001}"
-21:39:29 -- collecting point 75
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.0509745427568375}"
+12:18:05 -- collecting point 75
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.049818465956165216}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05219246966437752}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0397404664970763}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02391789321663888}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05018701323273241}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05294959028389702}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03974124890796718}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023916909614376064}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.049630568258540814}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05404594784343261}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039741943407522}"
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023917703328153003}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05005375882133638}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.052693667527332205}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03974256402414546}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023918412604294097}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.050888699227673154}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05183111307247331}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03974312195222109}"
-21:39:55 -- collecting point 100
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023919050236380537}"
+12:18:31 -- collecting point 100
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.0511379700161391}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05206056368512893}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.03974362623336638}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023919626557689436}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.051225546092057095}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05161121593303937}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039744084250186405}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023920150005483753}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05111377187552002}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05256437442618682}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.0397445020900924}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.02391802499110471}"
 testing H1<-5.0
-evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.050678434715048175}"
+evaluate ot="H1.bs<-5.0" t="H1<-5.0", ctx="{'H1': 0.05224351385292102}"
 testing Ar36<0.001
-evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.039744884817401245}"
+evaluate ot="Ar36.bs_corrected<0.001" t="Ar36<0.001", ctx="{'Ar36': 0.023918571744403067}"
 waiting for write to finish
 measurement finished
-estimated time: 125.829 actual time: :126.507
-flush and close file /Users/jan/Pychron/data/isotopes/0b/4f7496-5b0f-4007-b700-5433a2593d69.h5
+estimated time: 125.829 actual time: :126.136
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
 activate_detectors ('H1', 'AX', 'L2', 'CDD') {'peak_center': True}
 peak_center () {'detector': 'H1', 'integration_time': 0.262144, 'isotope': 'Ar40'}
-peak center: mean=16.461177534 threshold=5.0
+peak center: mean=10.54999753 threshold=5.0
 peak center started
 setup peak center. detector=['H1', 'AX', 'L2', 'CDD'], isotope=Ar40
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x18642d0b0>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x130c73b90>]
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x18642d0b0>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x130c73b90>]
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x18642d0b0>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x130c73b90>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x136ccb230>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x136ccb6b0>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x136ccb230>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x136ccb6b0>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x136ccb230>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x136ccb6b0>]
 Mapping mass to dac mass func: "parabolic"
 H1 map mass coeffs = [ -3.11428344e-04   1.33794662e-01   1.02968323e+00]
 H1 map mass to dac 39.9624 >> 5.87909
 GetDeflection H1 ===>> 0
 GetHighVoltage ===>> 4500
-do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x12cfbe1d0>
+do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x136cf70b0>
 doing pc
 starting peak center. center dac= 5.87909 step_width=0.001
 width = 0.001
@@ -1441,16 +1252,12 @@ Protected = 2000
 AF Demag not enabled. self.use_af_demag=False, use_af_demag=True
 SetMagnetDAC 5.86409 ===>> OK
 Magnet settling time: 0.500 0.500
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
 Magnet settling complete
 Wait for magnet to stop moving
 GetMagnetMoving ===>> True
 GetMagnetMoving ===>> True
 GetMagnetMoving ===>> True
 GetMagnetMoving ===>> True
-The checksum is not correct for this message. Expected: ffff, Actual: 
 GetMagnetMoving ===>> True
 GetMagnetMoving ===>> True
 GetMagnetMoving ===>> True
@@ -1462,49 +1269,19 @@ Unprotect detectors
 ProtectDetector CDD,Off ===>> OK
 GetDeflection CDD ===>> 50
 set_dac. change=True
-Wait until signal near baseline. tol= 0.0282853558758. timeout= 10
+Wait until signal near baseline. tol= 0.069531986386. timeout= 10
 no intensity change cnt= 0
-signals=[ 0.17333406  0.06514816  0.1652223   0.00206368 -0.02811542  0.        ]
-prev_signals=[ 0.17333406  0.06514816  0.1652223   0.00206368 -0.02811542  0.        ]
+signals=[ 0.57691647  0.21673535 -0.02854163 -0.0301756   0.03110334  0.        ]
+prev_signals=[ 0.57691647  0.21673535 -0.02854163 -0.0301756   0.03110334  0.        ]
 resetting no_intensity_change_cnt
-signals=[ 0.60213889  0.4710412   0.06250864 -0.05404028 -0.09497291  0.        ]
-prev_signals=[ 0.17333406  0.06514816  0.1652223   0.00206368 -0.02811542  0.        ]
+signals=[-0.08661664  0.1962159  -0.00124474 -0.05079513 -0.09163934  0.        ]
+prev_signals=[ 0.57691647  0.21673535 -0.02854163 -0.0301756   0.03110334  0.        ]
 no intensity change cnt= 0
-signals=[ 0.60213889  0.4710412   0.06250864 -0.05404028 -0.09497291  0.        ]
-prev_signals=[ 0.60213889  0.4710412   0.06250864 -0.05404028 -0.09497291  0.        ]
+signals=[-0.08661664  0.1962159  -0.00124474 -0.05079513 -0.09163934  0.        ]
+prev_signals=[-0.08661664  0.1962159  -0.00124474 -0.05079513 -0.09163934  0.        ]
 resetting no_intensity_change_cnt
-signals=[-0.15435875  0.15941939  0.06879034 -0.10206707 -0.01840044  0.        ]
-prev_signals=[ 0.60213889  0.4710412   0.06250864 -0.05404028 -0.09497291  0.        ]
-no intensity change cnt= 0
-signals=[-0.15435875  0.15941939  0.06879034 -0.10206707 -0.01840044  0.        ]
-prev_signals=[-0.15435875  0.15941939  0.06879034 -0.10206707 -0.01840044  0.        ]
-resetting no_intensity_change_cnt
-signals=[-0.01282473  0.09929363  0.10689266 -0.11291073 -0.02864787  0.        ]
-prev_signals=[-0.15435875  0.15941939  0.06879034 -0.10206707 -0.01840044  0.        ]
-no intensity change cnt= 0
-signals=[-0.01282473  0.09929363  0.10689266 -0.11291073 -0.02864787  0.        ]
-prev_signals=[-0.01282473  0.09929363  0.10689266 -0.11291073 -0.02864787  0.        ]
-resetting no_intensity_change_cnt
-signals=[-0.44580045  0.1322575   0.12740841 -0.11128099 -0.0664219   0.        ]
-prev_signals=[-0.01282473  0.09929363  0.10689266 -0.11291073 -0.02864787  0.        ]
-no intensity change cnt= 0
-signals=[-0.44580045  0.1322575   0.12740841 -0.11128099 -0.0664219   0.        ]
-prev_signals=[-0.44580045  0.1322575   0.12740841 -0.11128099 -0.0664219   0.        ]
-resetting no_intensity_change_cnt
-signals=[-0.24079712  0.06247713  0.11290048 -0.09979198  0.0699947   0.        ]
-prev_signals=[-0.44580045  0.1322575   0.12740841 -0.11128099 -0.0664219   0.        ]
-no intensity change cnt= 0
-signals=[-0.24079712  0.06247713  0.11290048 -0.09979198  0.0699947   0.        ]
-prev_signals=[-0.24079712  0.06247713  0.11290048 -0.09979198  0.0699947   0.        ]
-resetting no_intensity_change_cnt
-signals=[-0.27945239  0.09259004  0.1377775  -0.06608554  0.12111795  0.        ]
-prev_signals=[-0.24079712  0.06247713  0.11290048 -0.09979198  0.0699947   0.        ]
-no intensity change cnt= 0
-signals=[-0.27945239  0.09259004  0.1377775  -0.06608554  0.12111795  0.        ]
-prev_signals=[-0.27945239  0.09259004  0.1377775  -0.06608554  0.12111795  0.        ]
-resetting no_intensity_change_cnt
-signals=[ 0.00839007  0.00650907  0.08533217 -0.08540695 -0.02271471  0.        ]
-prev_signals=[-0.27945239  0.09259004  0.1377775  -0.06608554  0.12111795  0.        ]
+signals=[ 0.08583948  0.02966735  0.12517096 -0.07703171 -0.07061443  0.        ]
+prev_signals=[-0.08661664  0.1962159  -0.00124474 -0.05079513 -0.09163934  0.        ]
 Peak center baseline intensity achieved
 _do_sweep sm= 5.86409, em= 5.89409, stm= 0.001
 calculated step values: start=5.86409, end=5.89409, width=0.001, nsteps=31.0
@@ -1518,8 +1295,8 @@ AF Demag not enabled. self.use_af_demag=False, use_af_demag=True
 SetMagnetDAC 5.86409 ===>> OK
 set_dac. change=False
 no intensity change cnt= 0
-signals=[ 0.00839007  0.00650907  0.08533217 -0.08540695 -0.02271471  0.        ]
-prev_signals=[ 0.00839007  0.00650907  0.08533217 -0.08540695 -0.02271471  0.        ]
+signals=[ 0.08583948  0.02966735  0.12517096 -0.07703171 -0.07061443  0.        ]
+prev_signals=[ 0.08583948  0.02966735  0.12517096 -0.07703171 -0.07061443  0.        ]
 setting magnet DAC
 current  : 5.864090
 requested: 5.865124
@@ -1532,8 +1309,8 @@ Magnet settling time: 2.097 0.500
 Magnet settling complete
 set_dac. change=True
 resetting no_intensity_change_cnt
-signals=[-0.1675873   0.0860658   0.10139255 -0.0489249  -0.01531403  0.        ]
-prev_signals=[ 0.00839007  0.00650907  0.08533217 -0.08540695 -0.02271471  0.        ]
+signals=[-0.29404748  0.0555733   0.10281079 -0.05224699 -0.03866597  0.        ]
+prev_signals=[ 0.08583948  0.02966735  0.12517096 -0.07703171 -0.07061443  0.        ]
 setting magnet DAC
 current  : 5.865124
 requested: 5.866159
@@ -1631,10 +1408,6 @@ Checking detector "CDD". Protection Threshold: 0.5 (V)
 AF Demag not enabled. self.use_af_demag=False, use_af_demag=True
 SetMagnetDAC 5.87443482759 ===>> OK
 Magnet settling time: 2.097 0.500
-The checksum is not correct for this message. Expected: ffff, Actual: 
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
@@ -1789,7 +1562,6 @@ Checking detector "CDD". Protection Threshold: 0.5 (V)
 AF Demag not enabled. self.use_af_demag=False, use_af_demag=True
 SetMagnetDAC 5.88891758621 ===>> OK
 Magnet settling time: 2.097 0.500
-The checksum is not correct for this message. Expected: ffff, Actual: 
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
@@ -1823,9 +1595,6 @@ Checking detector "CDD". Protection Threshold: 0.5 (V)
 AF Demag not enabled. self.use_af_demag=False, use_af_demag=True
 SetMagnetDAC 5.89202103448 ===>> OK
 Magnet settling time: 2.097 0.500
-invalid checksum "". error=invalid literal for int() with base 10: ''
-State checksums do not match. Local:-860229079 Remote:None
-State checksum failed
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
@@ -1851,41 +1620,48 @@ Magnet settling time: 2.097 0.500
 Magnet settling complete
 set_dac. change=True
 result of _do_sweep=True
-_execute: Traceback (most recent call last):
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/pyscript.py", line 361, in execute_snippet
-    func(*argv)
-  File "<string>", line 83, in main
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/pyscript.py", line 88, in decorator
-    return func(obj, *args, **kw)
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/measurement_pyscript.py", line 371, in peak_center
-    save=save, config_name=config_name)
-  File "/Users/jan/.pychron.0/updates/pychron/pyscripts/measurement_pyscript.py", line 905, in _automated_run_call
-    return func(*args, **kw)
-  File "/Users/jan/.pychron.0/updates/pychron/experiment/automated_run/automated_run.py", line 626, in py_peak_center
-    ion.do_peak_center(new_thread=False, save=save, message='automated run peakcenter', timeout=300)
-  File "/Users/jan/.pychron.0/updates/pychron/spectrometer/ion_optics/ion_optics_manager.py", line 170, in do_peak_center
-    self._peak_center(*args)
-  File "/Users/jan/.pychron.0/updates/pychron/spectrometer/ion_optics/ion_optics_manager.py", line 360, in _peak_center
-    dac_d = pc.get_peak_center()
-  File "/Users/jan/.pychron.0/updates/pychron/spectrometer/jobs/peak_center.py", line 113, in get_peak_center
-    center, smart_shift, success = self.iteration(start, end, width)
-  File "/Users/jan/.pychron.0/updates/pychron/spectrometer/jobs/peak_center.py", line 216, in iteration
-    result = self._calculate_peak_center(dac_values, intensities)
-  File "/Users/jan/.pychron.0/updates/pychron/spectrometer/jobs/peak_center.py", line 325, in _calculate_peak_center
-    x, y = self._interpolate(x, y)
-  File "/Users/jan/.pychron.0/updates/pychron/spectrometer/jobs/peak_center.py", line 318, in _interpolate
-    f = interpolate.interp1d(x, y, kind=self.interpolation_kind)
-  File "/Users/jan/anaconda/envs/pychron_env/Pychron.app/Contents/lib/python2.7/site-packages/scipy/interpolate/interpolate.py", line 451, in __init__
-    self._y = self._reshape_yi(self.y)
-  File "/Users/jan/anaconda/envs/pychron_env/Pychron.app/Contents/lib/python2.7/site-packages/scipy/interpolate/polyint.py", line 112, in _reshape_yi
-    return yi.reshape((yi.shape[0], -1))
-ValueError: total size of new array must be unchanged
-
+result of _calculate_peak_center=([5.8712142484969938, 5.8791801803607218, 5.8871461122244488], [7.9422431820063242, 10.967295535368716, 8.1115551582740242], 5.8831481162324648, 10.967295535368716)
+Failed to find a valid peak. No peak greater than 1.0. max = 0.102525922244
+Failed to find a valid peak. No peak greater than 1.0. max = 0.0273788190869
+new center pos Detector(H1) (Ar40) @ 5.87918018036
+GetHighVoltage ===>> 4500
+GetDeflection H1 ===>> 0
+dac uncorrected for HV and deflection 5.87918018036
+update mftable H1 Ar40 5.87918018036 message=automated run peakcenter
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+dump mftable to /Users/jan/Pychron/setupfiles/spectrometer/mftables/mftable.csv
+add to repo msg=modified - automated run peakcenter
+sweep finished
+locally archiving mftable
+setting magnet DAC
+current  : 5.894090
+requested: 5.879180
+Delta Dac: 0.014910
+Checking detector protection. dv=0.01491
+Checking detector "CDD". Protection Threshold: 0.5 (V)
+AF Demag not enabled. self.use_af_demag=False, use_af_demag=True
+SetMagnetDAC 5.87918018036 ===>> OK
+Magnet settling time: 0.500 0.500
+Magnet settling complete
+set_dac. change=True
+Failed to find a valid peak. No peak greater than 1.0. max = 0.102525922244
+Failed to find a valid peak. No peak greater than 1.0. max = 0.0273788190869
+flush and close file /Users/jan/Pychron/data/isotopes/11/0ef3ec-397e-4e67-8517-948ef1d1210b.h5
+finished measure script
+executed snippet estimated_duration=552.28, duration=653.522324085
+jan_unknown400_120.py completed successfully
+Measurement Finished
+12:20:03 -- ******* Measurement Finished *******
 Post Measurement Started jan_pump_ms.py
-21:41:31 -- ******* Post Measurement Started jan_pump_ms.py *******
+12:20:03 -- ******* Post Measurement Started jan_pump_ms.py *******
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=2.88486480713e-05
+executed snippet estimated_duration=0, duration=3.57627868652e-05
 Pumping spectrometer
 open () {'name': 'O'}
 open name=O desc=---
@@ -1897,25 +1673,404 @@ doing actuation None-script open_channel True
 Open O ===>> OK
 GetIndicatorState O ===>> OK
 change switch state (True, True)
-21:41:31 -- OPEN   VALVE-O (Jan Ion Pump)
+12:20:03 -- OPEN   VALVE-O (Jan Ion Pump)
 -------------------------- open O () result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=0.377902030945
+executed snippet estimated_duration=0, duration=0.356917858124
 jan_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-21:41:31 -- ******* Post Measurement Finished *******
+12:20:03 -- ******* Post Measurement Finished *******
+$$$$$$$$$$$$$$$$$$$$ state at run end measurement
+state changed from measurement to success
+post measurement save measured=True aborted=False
+Set filtering
+setting fod for Ar41= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for H2= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar40= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for H1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar36= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for CDD= {'filter_outliers': True, 'std_devs': 10, 'iterations': 1}
+setting fod for Ar37= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for L2= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar38= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for L1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar39= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for AX= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+not connected to db mysql://janexp@129.138.12.160/labspy
+Enviromentals: {'lab_humiditys': [{'device': 'EnvironmentalMonitor',
+                    'name': 'Lab Hum.',
+                    'pub_date': '2017-10-28T12:06:27',
+                    'title': 'iServer Hum.',
+                    'value': 24.1}],
+ 'lab_pneumatics': [{'device': 'AirPressure',
+                     'name': 'Pressure',
+                     'pub_date': '2017-10-28T12:18:28',
+                     'title': None,
+                     'value': 96.6},
+                    {'device': 'AirPressure2',
+                     'name': 'Pressure2',
+                     'pub_date': '2017-10-28T12:18:28',
+                     'title': None,
+                     'value': 97.70878}],
+ 'lab_temperatures': [{'device': 'Coldfinger',
+                       'name': 'ColdFinger Temp.',
+                       'pub_date': '2017-10-28T12:06:27',
+                       'title': None,
+                       'value': 69.0},
+                      {'device': 'EnvironmentalMonitor',
+                       'name': 'Lab Temp.',
+                       'pub_date': '2017-10-28T12:16:33',
+                       'title': 'iServer Temp.',
+                       'value': 70.8},
+                      {'device': 'Chiller',
+                       'name': 'Coolant Temp.',
+                       'pub_date': '2017-10-28T12:11:27',
+                       'title': None,
+                       'value': 18.0555555555556}]}
+persistence save...
+persistence save - db
+post measurement save
+5076868848 connecting to database sqlite://@/
+connected to db sqlite://@/
+create new session 5076868848
+close session 5076868848
+No database instance. Not saving post measurement to isotopedb database
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+massspec enabled True
+create new session 5048762192
+MassSpec Database Version: 16.0
+close session 5048762192
+saving post measurement to secondary database
+saving to massspec database 129.138.12.160/massspecdata
+setting labnumber to 65883
+setting aliquot to 14
+setting step to A
+setting uuid to 110ef3ec-397e-4e67-8517-948ef1d1210b
+setting irradpos to 65883
+setting extract_device to Fusions CO2
+setting tray to 37-hole
+setting position to 12
+setting power_requested to 0.65
+setting extract_value to 0.65
+setting duration to 30.0
+setting duration_at_request to 30.0
+setting first_stage_delay to 30.0
+setting cleanup to 30.0
+setting comment to C:6 Luecite single crystal
+setting irradiation to NM-292
+setting level to C
+setting irradiation_level to C
+setting sample to NY-14
+setting material to Leucite
+setting project to IR970
+setting mass_spectrometer to Jan
+no attribute chron_dosages
+no attribute production_ratios
+no attribute interference_corrections
+no attribute production_name
+no attribute j
+adding new session for Jan
+Reference Isotope=Ar40
+Reference Detector=H1
+%%%%%%%%%%%%%%%%%%%% Comment: C:6 Luecite single crystal %%%%%%%%%%%%%%%%%%%
+adding isotope Ar41 H2
+add baseline dbdet= Ar41. original det= H2
+get baseline data Ar41 H2
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1346e2e90> len t=120
+baseline Ar41. v=-0.195703417604, e=0.0100175667653
+get signal data Ar41 H2
+Get data signal Ar41 0.029+/-0.012 len t=400
+adding isotope Ar40 H1
+add baseline dbdet= Ar40. original det= H1
+get baseline data Ar40 H1
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1346e2490> len t=120
+baseline Ar40. v=0.0551024374978, e=0.00325313860393
+get signal data Ar40 H1
+Get data signal Ar40 8.858+/-0.008 len t=400
+adding isotope Ar39 AX
+add baseline dbdet= Ar39. original det= AX
+get baseline data Ar39 AX
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1346e2610> len t=120
+baseline Ar39. v=0.109722686746, e=0.0042406488463
+get signal data Ar39 AX
+Get data signal Ar39 0.973+/-0.010 len t=400
+adding isotope Ar38 L1
+add baseline dbdet= Ar38. original det= L1
+get baseline data Ar38 L1
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1346e27d0> len t=120
+baseline Ar38. v=-0.0632165717412, e=0.00196811571778
+get signal data Ar38 L1
+Get data signal Ar38 0.0208+/-0.0023 len t=400
+adding isotope Ar37 L2
+add baseline dbdet= Ar37. original det= L2
+get baseline data Ar37 L2
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1346e2990> len t=120
+baseline Ar37. v=-0.0297643816086, e=0.00353470210027
+get signal data Ar37 L2
+Get data signal Ar37 0.055+/-0.005 len t=400
+adding isotope Ar36 CDD
+add baseline dbdet= Ar36. original det= CDD
+get baseline data Ar36 CDD
+Get data baseline <pychron.processing.isotope.Baseline object at 0x1346e2b50> len t=120
+baseline Ar36. v=1.23620920758e-05, e=3.75850243443e-06
+get signal data Ar36 CDD
+Get data signal Ar36 0.02365+/-0.00033 len t=400
+65883-14A added analysis time 0.756958961487s
+analysis added to mass spec database
+mass spec save time= 0.782
+persistence save - dvc
+================= post measurement started
+create new session 4946856368
+close session 4946856368
+add to repo msg=modified - jan_unknown400_120.py
+add to repo msg=modified - jan_co2.py
+add to repo msg=modified - jan_pump_ms.py
+add to repo msg=modified - jan_pump_extraction_line.py
+---------------- Experiment Queue saving disabled
+DVC saving peakcenter
+Failed to find a valid peak. No peak greater than 1.0. max = 0.102525922244
+Failed to find a valid peak. No peak greater than 1.0. max = 0.0273788190869
+ahead behind
+Smart pull ahead: 0 behind: 0
+Up-to-date with origin
+add to repo msg=modified - ad8224ebc6dbfeb9f5997218dfa5fe690569839d.json
+add to repo msg=modified - 83-14A.json
+add to repo msg=modified - 83-14A.dat.json
+not at valid file /Users/jan/Pychron/data/.dvc/repositories/IR970/658/tags/83-14A.tags.json
+add to repo msg=modified - 83-14A.peak.json
+add to repo msg=modified - 83-14A.extr.json
+not at valid file /Users/jan/Pychron/data/.dvc/repositories/IR970/658/monitor/83-14A.moni.json
+commit message=<COLLECTION>
+add to repo msg=modified - 83-14A.inte.json
+add to repo msg=modified - 83-14A.base.json
+commit message=<ISOEVO> default collection fits
+add to repo msg=modified - 83-14A.blan.json
+commit message=<BLANKS> preceding 
+add to repo msg=modified - 83-14A.icfa.json
+commit message=<ICFactor> default
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x133d39830>
+pushing to remote=origin, url=https://github.com
+ahead behind
+Smart pull ahead: 0 behind: 0
+Up-to-date with origin
+no changes to meta repo
+create new session 4946856368
+add association IR970
+get identifier "65883"
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x137ab62d0>
+close session 4946856368
+================= post measurement finished
+12:20:18 -- ******* Post Run Check *******
+loading queue conditionals post_run_actions
+loading system conditionals post_run_actions
+loading conditionals from /Users/jan/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+loading queue conditionals post_run_terminations
+loading system conditionals post_run_terminations
+loading conditionals from /Users/jan/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+Checking default post run terminations n=1
+GetDeflection CDD ===>> 50
+testing CDD==2000
+evaluate ot="CDD.deflection==2000" t="CDD==2000", ctx="{'CDD': 50.0}"
+12:20:18 -- ******* Post Run Check Passed *******
+12:20:18 -- Automated run 65883-14A success duration: 750.764 s
 ----------------- finish -----------------
-state changed from measurement to failed
 ----------------- stop -----------------
-Measurement Finished unsuccessfully. Aborted=False
-21:41:31 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
-failed execution step Measurement Failed
-measurement did not complete successfully
-21:41:31 -- Automated run 65883-14A failed duration: 747.187 s
------------------ finish -----------------
------------------ stop -----------------
-finish run. runs completed=47
+retroactive repository identifiers disabled
+finish run. runs completed=1
+update duration runid=65883-14A, duration=750.764212132, md5=a5238c40
+loading script "jan_unknown400_120.py"
+loading script "jan_pump_ms.py"
+loading script "jan_co2.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=539.8, duration=0.000281095504761
+script duration name:unknown400_120 seconds:540.0
+loading script "jan_unknown400_120.py"
+loading script "jan_pump_ms.py"
+loading script "jan_co2.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=2.59876251221e-05
+loading script "jan_unknown400_120.py"
+loading script "jan_pump_ms.py"
+loading script "jan_co2.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=5.48362731934e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000114917755127
+executed snippet estimated_duration=0.0, duration=0.00656199455261
+script duration name:co2 seconds:0.0
+loading script "jan_unknown400_120.py"
+loading script "jan_pump_ms.py"
+loading script "jan_co2.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000236988067627
+executed snippet estimated_duration=4.0, duration=0.00380897521973
+Script duration 540.0
+Run total estimated duration= 541.000
+unknown400_120 in script context. using previous estimated duration
+script duration name:unknown400_120 seconds:540.0
+pump_ms in script context. using previous estimated duration
+co2 in script context. using previous estimated duration
+script duration name:co2 seconds:0.0
+pump_extraction_line in script context. using previous estimated duration
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+script duration name:unknown400_120 seconds:540.0
+script duration name:co2 seconds:0.0
+Script duration 540.0
+Run total estimated duration= 541.000
+loading script "jan_unknown600_180.py"
+loading script "jan_pump_ms.py"
+loading script "jan_sniffair_x2.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=802.2, duration=0.000174045562744
+script duration name:unknown600_180 seconds:802.0
+loading script "jan_unknown600_180.py"
+loading script "jan_pump_ms.py"
+loading script "jan_sniffair_x2.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=5.19752502441e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000126123428345
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=32.0, duration=9.79900360107e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000176906585693
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000123023986816
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=36.0, duration=0.000117063522339
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000127077102661
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000146865844727
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=36.0, duration=9.3936920166e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=70.0, duration=0.000212907791138
+executed snippet estimated_duration=250.0, duration=0.057596206665
+script duration name:sniffair_x2 seconds:250.0
+Script duration 1052.0
+Run total estimated duration= 1053.000
+unknown600_180 in script context. using previous estimated duration
+script duration name:unknown600_180 seconds:802.0
+sniffair_x2 in script context. using previous estimated duration
+script duration name:sniffair_x2 seconds:250.0
+Script duration 1052.0
+Run total estimated duration= 1053.000
+script duration name:unknown600_180 seconds:802.0
+script duration name:sniffair_x2 seconds:250.0
+Script duration 1052.0
+Run total estimated duration= 1053.000
+script duration name:unknown400_120 seconds:540.0
+loading script "jan_unknown400_120.py"
+loading script "jan_pump_ms.py"
+loading script "jan_cocktail_x1.py"
+loading script "jan_pump_extraction_line.py"
+testing...
+no interpolation path defined
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=6.48498535156e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=0.000158071517944
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=32.0, duration=0.000104904174805
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=34.0, duration=0.000138998031616
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=8.51154327393e-05
+calculate duration
+testing...
+no interpolation path defined
+executed snippet estimated_duration=38.0, duration=9.58442687988e-05
+executed snippet estimated_duration=108.0, duration=0.0182089805603
+script duration name:cocktail_x1 seconds:108.0
+Script duration 648.0
+Run total estimated duration= 649.000
+nruns=15 before=5.0, run_dur=9759.0, btw=350.0
 write rem/ex queues
 /Users/jan/Pychron/experiments/rem/CurrentExperiment.rem.txt
 /Users/jan/Pychron/experiments/rem/CurrentExperiment.ex.txt
